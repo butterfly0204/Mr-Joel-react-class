@@ -23,11 +23,28 @@
 // })
 // console.log(result);
 
-let numbers = [5,15,25,35]
-let answer = numbers.map( num =>{
-    return num *3
+// let numbers = [5,15,25,35]
+// let answer = numbers.map( num =>{
+//     return num *3
 
-}
+// }
 
-)
-console.log(answer)
+// )
+// console.log(answer)
+
+//filter
+// let myNumber = [2,20,40,3,5,6,7,8,10,30,60,58]
+
+// let result = myNumber.filter(num =>
+//      num <10
+// )
+// console.log(result)
+
+let myNumber = [2,20,40,3,5,6,7,8,10,30,60,58]
+
+let result = myNumber.filter( (num) =>{
+    return num<10
+})
+
+console.log(result);
+
