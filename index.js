@@ -24,8 +24,8 @@
 // console.log(result);
 
 let numbers = [5,15,25,35]
-let answer = numbers.map( (num) =>{
-    return num + 10
+let answer = numbers.map( num =>{
+    return num *3
 
 }
 
