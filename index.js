@@ -81,16 +81,19 @@
 // }
 // console.log(add(2,3))
 
-const calculator = {
-    add: (a,b) => a+b,
-    substract: (c,d) => c-d,
-    divide: (a,b) => a/b ,
-    multiple:(a,b) =>a*b
+// const calculator = {
+//     add: (a,b) => a+b,
+//     substract: (c,d) => c-d,
+//     divide: (a,b) => a/b ,
+//     multiple:(a,b) =>a*b
 
     
-}
+// }
 
-console.log( calculator.multiple(3,5))
+// console.log( calculator.multiple(3,5))
 
+const first =[1,3]
+const second = [2,5]
 
+console.log (...first, ...second)
  
