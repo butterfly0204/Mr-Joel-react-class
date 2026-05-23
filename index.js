@@ -50,8 +50,35 @@
 
 
 
-let nums = [1,2,3,4,5,6,7,8]
+// let nums = [1,2,3,4,5,6,7,8]
 
-let resultn = nums.filter( num => num % 2 === 0)
+// let result= nums.filter( num => num % 2 === 0)
 
-console.log(result)
+// console.log(result)
+
+
+
+////////////////////SPREAD AND RES OPERATORS ///////////////////////////////
+
+
+// let a = [1,2,3]
+// let b = [4,5,6]
+// console.log(...a, ...b)
+
+// function sum(...fruits){
+//     return fruits;
+// ``
+// }
+
+// console.log(1,2,3,4,5)
+
+//  numbers =[1,2,3,4,5]
+
+//  let result = numbers.map(num =>num*2)
+//  console.log (result)
+const add = (a,b) =>{
+  return  a+b
+}
+console.log(add(2,3))
+
+
