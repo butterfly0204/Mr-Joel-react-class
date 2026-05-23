@@ -76,9 +76,21 @@
 
 //  let result = numbers.map(num =>num*2)
 //  console.log (result)
-const add = (a,b) =>{
-  return  a+b
+// const add = (a,b) =>{
+//   return  a+b
+// }
+// console.log(add(2,3))
+
+const calculator = {
+    add: (a,b) => a+b,
+    substract: (c,d) => c-d,
+    divide: (a,b) => a/b ,
+    multiple:(a,b) =>a*b
+
+    
 }
-console.log(add(2,3))
+
+console.log( calculator.multiple(3,5))
 
 
+ 
