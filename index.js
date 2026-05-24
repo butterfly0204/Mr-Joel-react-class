@@ -97,4 +97,9 @@
 
 // console.log (...first, ...second)
 
+let colors =["red", "blue"]
+let newVarable = colors
+
+console.log(...newVarable)
+
  
