@@ -92,8 +92,9 @@
 
 // console.log( calculator.multiple(3,5))
 
-const first =[1,3]
-const second = [2,5]
+// const first =[1,3]
+// const second = [2,5]
 
-console.log (...first, ...second)
+// console.log (...first, ...second)
+
  
