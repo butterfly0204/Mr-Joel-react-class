@@ -111,11 +111,13 @@
 // }, 1)
 
 // console.log(result)
-const prices = [200, 500, 300]
+const words = ["dog", "elephant", "cat", "hippopotamus"]
 
-const totalPrice =prices.reduce((acc, price) =>{
-    return acc+ price
-
-},0)
-console.log(totalPrice);
-
+const biggestWord = words.reduce((acc, num)=>{
+    if(num> acc){
+        console.log(num)
+    }
+    else{
+        console.log(acc)
+    }
+})
