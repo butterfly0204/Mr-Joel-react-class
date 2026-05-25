@@ -97,9 +97,10 @@
 
 // console.log (...first, ...second)
 
-let colors =["red", "blue"]
-let newVarable = colors
+// reduce() method
+const numbers = [1,2,3]
+const answer = numbers.reduce((acc, num)=>{
+    return acc +num
+}, 5)
 
-console.log(...newVarable)
-
- 
+console.log(answer)
