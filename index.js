@@ -98,9 +98,24 @@
 // console.log (...first, ...second)
 
 // reduce() method
-const numbers = [1,2,3]
-const answer = numbers.reduce((acc, num)=>{
-    return acc +num
-}, 5)
+// const numbers = [1,2,3]
+// const answer = numbers.reduce((acc, num)=>{
+//     return acc +num
+// }, 5)
 
-console.log(answer)
+// console.log(answer)
+// const numbers = [2,3,4]
+// const result =numbers.reduce((acc,number) =>{
+
+//   return acc * number
+// }, 1)
+
+// console.log(result)
+const prices = [200, 500, 300]
+
+const totalPrice =prices.reduce((acc, price) =>{
+    return acc+ price
+
+},0)
+console.log(totalPrice);
+
