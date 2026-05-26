@@ -133,10 +133,25 @@
 // }
 // playGame(eatFood)
 
-function test(callback) {
-  callback();
-}
+// function test(callback) {
+//   callback();
+// }
 
-test(() => {
-  console.log("Running...");
-});
+// test(() => {
+//   console.log("Running...");
+
+// });
+// let food = "plantain"
+  function processOrder(name, callback){
+    console.log("order Recieved: " + name)
+    callback(name)
+  }
+
+  function cookFood(name){
+    console.log("cooking food: " +  name)
+  }
+
+  processOrder("Plantain",cookFood)
+
+
+
