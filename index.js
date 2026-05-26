@@ -167,15 +167,37 @@
 // }
 // console.log( calculate(3,5,multiple))
 
-function greet(callback) {
-  console.log("Hello");
-  callback()
-}
+// function greet(callback) {
+//   console.log("Hello");
+//   callback()
+// }
 
-greet(() => {
-  console.log("Bye");
-});
+// greet(() => {
+//   console.log("Bye");
+// });
+//  loginUser((callback)=>{
+//     console.log("logging in....")
+//     callback()
+//  })
 
+//  getUserProfile( ()=>{ 
+//     console.log("loading Profile")
+
+//  })
+
+//  loginUser(callback)
+
+ function loginUser(callback){
+    console.log("logging in...")
+    callback()
+    
+ }
+
+ function getUserProfile(){
+    console.log("Loading Profile.....")
+ }
+
+ loginUser(getUserProfile)
 
 
 
