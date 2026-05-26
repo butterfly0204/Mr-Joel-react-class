@@ -154,18 +154,27 @@
 //   processOrder("Plantain",cookFood)
 
 
-function calculate(a,b, operation){
-    return   operation(a,b)
+// function calculate(a,b, operation){
+//     return   operation(a,b)
 
-}
-function add(a,b){
-    return(a +b)
-}
-function multiple(a,b){
+// }
+// function add(a,b){
+//     return(a +b)
+// }
+// function multiple(a,b){
 
-    return(a *b)
+//     return(a *b)
+// }
+// console.log( calculate(3,5,multiple))
+
+function greet(callback) {
+  console.log("Hello");
+  callback()
 }
-console.log( calculate(3,5,multiple))
+
+greet(() => {
+  console.log("Bye");
+});
 
 
 
