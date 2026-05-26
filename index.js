@@ -111,9 +111,32 @@
 // }, 1)
 
 // console.log(result)
-const words = ["dog", "elephant", "cat", "hippopotamus"]
+// function morning (name, callback) {
 
-const biggestWord = words.reduce((acc, num)=>{
-    return num > acc ? num :acc
-}) 
-console.log(biggestWord)
+//     console.log("Good morning" + name)
+//     callback()
+
+// }
+// function goodbye(){
+//     console.log("goodbye");
+    
+// }
+// morning(" favour", goodbye)
+
+// function playGame(aftergame){
+//     console.log("i am playing game my girl")
+//     aftergame()
+// }
+// function eatFood(){
+//     console.log("I am eating my food")
+
+// }
+// playGame(eatFood)
+
+function test(callback) {
+  callback();
+}
+
+test(() => {
+  console.log("Running...");
+});
