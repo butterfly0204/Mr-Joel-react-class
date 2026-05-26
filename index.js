@@ -306,14 +306,29 @@
 
 // })
 
-async function waitExample() {
-  console.log("Start");
+// async function waitExample() {
+//   console.log("Start");
 
-  await new Promise(resolve => setTimeout(resolve, 2000));
+//   await new Promise(resolve => setTimeout(resolve, 2000));
 
-  console.log("After 2 seconds");
+//   console.log("After 2 seconds");
+// }
+
+// waitExample();
+
+async function getData() {
+    console.log("fetching data")
+    let data = await  new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("data Recieved")
+            
+        }, 2000);
+        
+    })
+    console.log(data)
+    
 }
 
-waitExample();
+getData()
 
  
