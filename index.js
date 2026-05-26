@@ -141,17 +141,33 @@
 //   console.log("Running...");
 
 // });
-// let food = "plantain"
-  function processOrder(name, callback){
-    console.log("order Recieved: " + name)
-    callback(name)
-  }
+// // let food = "plantain"
+//   function processOrder(name, callback){
+//     console.log("order Recieved: " + name)
+//     callback(name)
+//   }
 
-  function cookFood(name){
-    console.log("cooking food: " +  name)
-  }
+//   function cookFood(name){
+//     console.log("cooking food: " +  name)
+//   }
 
-  processOrder("Plantain",cookFood)
+//   processOrder("Plantain",cookFood)
+
+
+function calculate(a,b, operation){
+    return   operation(a,b)
+
+}
+function add(a,b){
+    return(a +b)
+}
+function multiple(a,b){
+
+    return(a *b)
+}
+console.log( calculate(3,5,multiple))
 
 
 
+
+ 
