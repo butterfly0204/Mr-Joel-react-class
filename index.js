@@ -285,25 +285,35 @@
 //     console.log(message)
 // })
 
- let CheckPassword = new Promise((resolve, reject) => {
-   let password = 1234
-    if(password === 1234){
-        resolve('Correct password')
-    }
-    else{
-        reject("wrong Password")
-    }
- })
+//  let CheckPassword = new Promise((resolve, reject) => {
+//    let password = 1234
+//     if(password === 1234){
+//         resolve('Correct password')
+//     }
+//     else{
+//         reject("wrong Password")
+//     }
+//  })
 
- CheckPassword
- .then((message) =>{
-    console.log(message)
+//  CheckPassword
+//  .then((message) =>{
+//     console.log(message)
 
- })
-.catch((error) =>{
-    console.log(error);
+//  })
+// .catch((error) =>{
+//     console.log(error);
     
 
-})
+// })
+
+async function waitExample() {
+  console.log("Start");
+
+  await new Promise(resolve => setTimeout(resolve, 2000));
+
+  console.log("After 2 seconds");
+}
+
+waitExample();
 
  
