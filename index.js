@@ -187,18 +187,90 @@
 
 //  loginUser(callback)
 
- function loginUser(callback){
-    console.log("logging in...")
-    callback()
+//  function loginUser(callback){
+//     console.log("logging in...")
+//     callback()
     
- }
+//  }
 
- function getUserProfile(){
-    console.log("Loading Profile.....")
- }
+//  function getUserProfile(){
+//     console.log("Loading Profile.....")
+//  }
 
- loginUser(getUserProfile)
+//  loginUser(getUserProfile)
+// console.log("Start");
+
+// setTimeout(() => {
+//   console.log("Inside timeout");
+// }, 2000);
+
+// console.log("End");
 
 
+// let foodPromise = new Promise((resolve, reject) => {
+//   let foodReady = true;
+
+//   if (foodReady) {
+//     resolve("Here is your food 🍔");
+//   } else {
+//     reject("No food available ❌");
+//   }
+// });
+
+// // foodPromise.then((message) =>{
+// //     console.log(message)
+
+// // })
+// // .catch((error) => 
+// //     {
+// //         console.log(error);
+        
+    
+// //     }
+// // )
+
+
+// let foodpromise = new Promise((resolve, reject) => {
+//     let foodIsREady = false
+
+//     if(foodIsREady){
+//         resolve("food is ready to eat")
+//     }
+//     else{
+//         reject("order isnt available")
+//     }
+// })
+// foodpromise
+// .then((message) => {
+
+//     console.log(message)
+    
+// })
+
+// .catch((error) => {
+//     console.log(error)
+
+    
+// }) 
+
+let foodPromise = new Promise((resolve, reject) => {
+    let foodIsREady =true
+    if(foodIsREady){
+        console.log("food is ready");
+        
+    }
+    else{
+        console.log("food is not ready")
+    }
+})
+
+foodPromise
+.then((message)=>{
+    console.log(message)
+
+})
+.catch((error) =>{
+    console.log(error)
+})
 
  
