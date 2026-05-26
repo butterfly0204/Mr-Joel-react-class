@@ -114,10 +114,6 @@
 const words = ["dog", "elephant", "cat", "hippopotamus"]
 
 const biggestWord = words.reduce((acc, num)=>{
-    if(num> acc){
-        console.log(num)
-    }
-    else{
-        console.log(acc)
-    }
-})
+    return num > acc ? num :acc
+}) 
+console.log(biggestWord)
