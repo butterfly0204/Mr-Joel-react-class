@@ -253,24 +253,57 @@
     
 // }) 
 
-let foodPromise = new Promise((resolve, reject) => {
-    let foodIsREady =true
-    if(foodIsREady){
-        console.log("food is ready");
+// let foodPromise = new Promise((resolve, reject) => {
+//     let foodIsREady =true
+//     if(foodIsREady){
+//         console.log("food is ready");
         
+//     }
+//     else{
+//         console.log("food is not ready")
+//     }
+// })
+
+// foodPromise
+// .then((message)=>{
+//     console.log(message)
+
+// })
+// .catch((error) =>{
+//     console.log(error)
+// })
+
+// let myPromise = new Promise((resolve, reject) => {
+//     console.log("loading.....")
+//     setTimeout(() => {
+//         resolve("done.")
+        
+//     }, 2000);
+// })
+
+// myPromise.then((message)=>{
+//     console.log(message)
+// })
+
+ let CheckPassword = new Promise((resolve, reject) => {
+   let password = 1234
+    if(password === 1234){
+        resolve('Correct password')
     }
     else{
-        console.log("food is not ready")
+        reject("wrong Password")
     }
-})
+ })
 
-foodPromise
-.then((message)=>{
+ CheckPassword
+ .then((message) =>{
     console.log(message)
 
-})
+ })
 .catch((error) =>{
-    console.log(error)
+    console.log(error);
+    
+
 })
 
  
