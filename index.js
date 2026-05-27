@@ -316,19 +316,36 @@
 
 // waitExample();
 
-async function getData() {
-    console.log("fetching data")
-    let data = await  new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve("data Recieved")
+// async function getData() {
+//     console.log("fetching data")
+//     let data = await  new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve("data Recieved")
             
-        }, 2000);
+//         }, 2000);
         
-    })
-    console.log(data)
+//     })
+//     console.log(data)
     
-}
+// }
 
-getData()
+// getData()
+
+// Ternary Operator
+const exerciseTimeMIns = 20
+let message = ' '
+if ( exerciseTimeMIns < 30){
+   message= 'You need to try harder'
+}
+else{
+   message = 'Doing good'
+}
+console.log(message)
+
+
+
+
+
+
 
  
