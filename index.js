@@ -335,8 +335,9 @@
 
 // 
 
-const playerGuess = 6
+let playerGuess = 6
 const CorrectAnswer = 6
-let message = (playerGuess === CorrectAnswer)? "correct": "wrong"
+let message = playerGuess === CorrectAnswer? "correct":
+ playerGuess<CorrectAnswer? "Too Low": "Too High"
 
 console.log(message)
