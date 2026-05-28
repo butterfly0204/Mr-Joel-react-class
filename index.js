@@ -332,20 +332,9 @@
 // getData()
 
 // Ternary Operator
-const exerciseTimeMIns = 20
-let message = ' '
-if ( exerciseTimeMIns < 30){
-   message= 'You need to try harder'
-}
-else{
-   message = 'Doing good'
-}
+
+exerciseTimeMIns = 88
+const message = exerciseTimeMIns < 30? "you need to try harder": exerciseTimeMIns < 60? " Excellent": "doings good"
+
+
 console.log(message)
-
-
-
-
-
-
-
- 
