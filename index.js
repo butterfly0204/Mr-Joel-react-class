@@ -333,8 +333,10 @@
 
 // Ternary Operator
 
-exerciseTimeMIns = 88
-const message = exerciseTimeMIns < 30? "you need to try harder": exerciseTimeMIns < 60? " Excellent": "doings good"
+// 
 
+const playerGuess = 6
+const CorrectAnswer = 6
+let message = (playerGuess === CorrectAnswer)? "correct": "wrong"
 
 console.log(message)
