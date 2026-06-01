@@ -335,9 +335,40 @@
 
 // 
 
-let playerGuess = 6
-const CorrectAnswer = 6
-let message = playerGuess === CorrectAnswer? "correct":
- playerGuess<CorrectAnswer? "Too Low": "Too High"
+// let playerGuess = 6
+// const CorrectAnswer = 6
+// let message = playerGuess === CorrectAnswer? "correct":
+//  playerGuess<CorrectAnswer? "Too Low": "Too High"
 
-console.log(message)
+// console.log(message)
+
+//SWITCH STATEMENT
+
+function selectItem(item){
+    let price = 0
+    switch(item){
+        case 'coffee':
+            price =2
+
+        break
+
+        case 'sandwiches':
+             price= 5
+             break
+        
+        case 'salad':
+            price = 4
+            break
+        
+        case 'lemon cake':
+        price = 4
+        break
+
+        default:
+        return `sorry, we dont see ${item}`
+
+    }
+    return `you selected ${item} that will be $${price}`
+}
+
+console.log( selectItem("salad"))
