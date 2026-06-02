@@ -344,31 +344,46 @@
 
 //SWITCH STATEMENT
 
-function selectItem(item){
-    let price = 0
-    switch(item){
-        case 'coffee':
-            price =2
+// function selectItem(item){
+//     let price = 0
+//     switch(item){
+//         case 'coffee':
+//             price =2
 
-        break
+//         break
 
-        case 'sandwiches':
-             price= 5
-             break
+//         case 'sandwiches':
+//              price= 5
+//              break
         
-        case 'salad':
-            price = 4
-            break
+//         case 'salad':
+//             price = 4
+//             break
         
-        case 'lemon cake':
-        price = 4
-        break
+//         case 'lemon cake':
+//         price = 4
+//         break
 
-        default:
-        return `sorry, we dont see ${item}`
+//         default:
+//         return `sorry, we dont see ${item}`
 
-    }
-    return `you selected ${item} that will be $${price}`
+//     }
+//     return `you selected ${item} that will be $${price}`
+// }
+
+// console.log( selectItem("salad"))
+
+// Objesct disstructioning 
+
+const dreamHoliday = {
+    destination: 'Canada',
+    activity: 'Playing Chess',
+    accommodation: 'Peace',
+    companion: " Bukola"
+
 }
 
-console.log( selectItem("salad"))
+const {destination, activity, accommodation, companion} = dreamHoliday
+console.log(`i would love to go to ${destination},
+     i will be ${activity} and will be going to ${accommodation} 
+     and with my bestie${companion}`)
