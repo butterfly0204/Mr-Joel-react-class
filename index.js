@@ -391,15 +391,20 @@
 // set timeout
 
 
-function logAnswer(answer, points){
+// function logAnswer(answer, points){
  
         
-        console.log (`the answer is ${answer} of course! if you got it right, give yourself ${points} points`)
+//         console.log (`the answer is ${answer} of course! if you got it right, give yourself ${points} points`)
     
-    }
-    setTimeout(logAnswer, 3000, "lima", 10)
+//     }
+//     setTimeout(logAnswer, 3000, "lima", 10)
         
  
         
    
-    console.log('what is the caital of Peru?')
+//     console.log('what is the caital of Peru?')
+
+// import/ export
+ const myDate = new Date().getFullYear()
+ console.log(myDate);
+ 
