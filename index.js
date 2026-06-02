@@ -375,15 +375,31 @@
 
 // Objesct disstructioning 
 
-const dreamHoliday = {
-    destination: 'Canada',
-    activity: 'Playing Chess',
-    accommodation: 'Peace',
-    companion: " Bukola"
+// const dreamHoliday = {
+//     destination: 'Canada',
+//     activity: 'Playing Chess',
+//     accommodation: 'Peace',
+//     companion: " Bukola"
 
-}
+// }
 
-const {destination, activity, accommodation, companion} = dreamHoliday
-console.log(`i would love to go to ${destination},
-     i will be ${activity} and will be going to ${accommodation} 
-     and with my bestie${companion}`)
+// const {destination, activity, accommodation, companion} = dreamHoliday
+// console.log(`i would love to go to ${destination},
+//      i will be ${activity} and will be going to ${accommodation} 
+//      and with my bestie${companion}`)
+
+// set timeout
+
+
+function logAnswer(answer, points){
+ 
+        
+        console.log (`the answer is ${answer} of course! if you got it right, give yourself ${points} points`)
+    
+    }
+    setTimeout(logAnswer, 3000, "lima", 10)
+        
+ 
+        
+   
+    console.log('what is the caital of Peru?')
