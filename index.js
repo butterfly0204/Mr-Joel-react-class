@@ -405,14 +405,31 @@
 //     console.log('what is the caital of Peru?')
 
 // import/ export
-console.log("hello")
-function userNames(userName){
-    if(userName){
-        console.log(userName)
-    }
-    else{
-         throw new Error('User not found Duhh');
+// console.log("hello")
+// function userNames(userName){
+//     if(userName){
+//         console.log(userName)
+//     }
+//     else{
+//          throw new Error('User not found Duhh');
          
-    }
+//     }
+// }
+// userNames()
+
+let currentTicketNUmber = 0
+function getNextTicketNumber(){
+    return  currentTicketNUmber ++
+
+
 }
-userNames()
+
+console.log(`GUest 1, your ticket number is: ${getNextTicketNumber()}`)
+
+console.log(`GUest 2, your ticket number is: ${getNextTicketNumber()}`)
+
+console.log(`GUest 3, your ticket number is: ${getNextTicketNumber()}`)
+
+
+
+ 
