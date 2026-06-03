@@ -417,19 +417,28 @@
 // }
 // userNames()
 
-let currentTicketNUmber = 0
-function getNextTicketNumber(){
-    return  currentTicketNUmber ++
+
+// pre increment
+// let currentTicketNUmber = 0
+// function getNextTicketNumber(){
+//     return  currentTicketNUmber ++
 
 
+// }
+
+// console.log(`GUest 1, your ticket number is: ${getNextTicketNumber()}`)
+
+// console.log(`GUest 2, your ticket number is: ${getNextTicketNumber()}`)
+
+// console.log(`GUest 3, your ticket number is: ${getNextTicketNumber()}`)
+
+
+//Number Separator and bigint
+
+
+speedWarning= (speed) => {
+    return `you are going at ${speed} mph`
 }
 
-console.log(`GUest 1, your ticket number is: ${getNextTicketNumber()}`)
-
-console.log(`GUest 2, your ticket number is: ${getNextTicketNumber()}`)
-
-console.log(`GUest 3, your ticket number is: ${getNextTicketNumber()}`)
-
-
-
+console.log(speedWarning(40))
  
