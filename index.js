@@ -405,6 +405,14 @@
 //     console.log('what is the caital of Peru?')
 
 // import/ export
- const myDate = new Date().getFullYear()
- console.log(myDate);
- 
+console.log("hello")
+function userNames(userName){
+    if(userName){
+        console.log(userName)
+    }
+    else{
+         throw new Error('User not found Duhh');
+         
+    }
+}
+userNames()
