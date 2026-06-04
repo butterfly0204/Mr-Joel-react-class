@@ -443,22 +443,41 @@
 // console.log(speedWarning(40))
  //  introduction to fectch
 
-//  fetch('https://dog.ceo/api/breeds/image/random')
-//       .then(response =>response.json())
-//       .then(data => {
-//         const createElement = document.createElement('img')
-//         createElement.src = data.message
-//         createElement.alt = 'random dog pictures'
-//         document.getElementById("img-con").appendChild(createElement)
+ async function dog(){
+     try {
+        const response = await fetch('https://dog.ceo/api/breeds/image/random')
+             .then(response =>response.json())
+             .then(data => {
+               const createElement = document.createElement('img')
+               createElement.src = data.message
+               createElement.alt = 'random dog pictures'
+               document.getElementById("img-con").appendChild(createElement)
+             
 
-//       })
+            })
 
-async  function getRandom(){
+
+            } catch (error) {
+                console.log(error)
+                
+            }
+            finally{
+                console.log("omo work ooo");
+                
+            }
+
+    } 
+    dog()           
+        
+
+
+
+// async  function getRandom(){
     
-    const response = await fetch('https://bored-api.appbrewery.com/random')
+//     const response = await fetch('https://bored-api.appbrewery.com/random')
     
-    const data = await response.json()
-    console.log(data)
+//     const data = await response.json()
+//     console.log(data)
     
-}
- getRandom()
+// }
+//  getRandom()
