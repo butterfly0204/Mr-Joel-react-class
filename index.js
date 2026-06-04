@@ -436,9 +436,22 @@
 //Number Separator and bigint
 
 
-speedWarning= (speed) => {
-    return `you are going at ${speed} mph`
-}
+// speedWarning= (speed) => {
+//     return `you are going at ${speed} mph`
+// }
 
-console.log(speedWarning(40))
+// console.log(speedWarning(40))
+ //  introduction to fectch
+
+ fetch('https://dog.ceo/api/breeds/image/random')
+      .then(response =>response.json())
+      .then(data => {
+        const createElement = document.createElement('img')
+        createElement.src = data.message
+
+        createElement.alt = 'random dog pictures'
+        document.getElementById("img-con").appendChild(createElement)
+
+      })
+      
  
