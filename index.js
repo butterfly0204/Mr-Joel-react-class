@@ -532,20 +532,26 @@
 // }   
 
 
- async function placeholder(){
+ 
     try {
-    const response = await 
-    fetch("https//apis.scrimba.com/jsonplceholder/posts", 
-     {method:POST,
+    const response = await fetch("https//jsonplceholder/posts", 
+     {method:'POST',
+       
         body: JSON.stringify(
             {
                 title:"Holiday Nightmares",
                 body: "When thy were Kidnap in scotland",
                 userId:101,
             }
-        )
 
-    })
+        ),
+        headers:{
+
+            "Content-type": "application/json"
+        }
+    }
+
+)
     if(!response.ok){
         throw new Error("There was error wih the API")
         
@@ -560,7 +566,6 @@
     finally{
         "seccessful"
     }
-}
 
 
 
