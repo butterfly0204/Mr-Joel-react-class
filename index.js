@@ -443,41 +443,172 @@
 // console.log(speedWarning(40))
  //  introduction to fectch
 
- async function dog(){
-     try {
-        const response = await fetch('https://dog.ceo/api/breeds/image/random')
-             .then(response =>response.json())
-             .then(data => {
-               const createElement = document.createElement('img')
-               createElement.src = data.message
-               createElement.alt = 'random dog pictures'
-               document.getElementById("img-con").appendChild(createElement)
+//  async function dog(){
+//      try {
+//         const response = await fetch('https://dog.ceo/api/breeds/image/random')
+//              .then(response =>response.json())
+//              .then(data => {
+//                const createElement = document.createElement('img')
+//                createElement.src = data.message
+//                createElement.alt = 'random dog pictures'
+//                document.getElementById("img-con").appendChild(createElement)
              
 
-            })
+//             })
 
 
-            } catch (error) {
-                console.log(error)
+//             } catch (error) {
+//                 console.log(error)
                 
-            }
-            finally{
-                console.log("omo work ooo");
+//             }
+//             finally{
+//                 console.log("omo work ooo");
                 
-            }
+//             }
 
-    } 
-    dog()           
+//     } 
+//     dog()           
         
 
 
 
-// async  function getRandom(){
+// // async  function getRandom(){
     
-//     const response = await fetch('https://bored-api.appbrewery.com/random')
+// //     const response = await fetch('https://bored-api.appbrewery.com/random')
     
-//     const data = await response.json()
-//     console.log(data)
+// //     const data = await response.json()
+// //     console.log(data)
     
-// }
-//  getRandom()
+// // }
+// //  getRandom()
+
+// async function myPost(){
+//     try {
+//         const response =  await fetch('https://jsonplaceholder.typicode.com/posts')
+//         if(!response.ok){
+//             throw new Error ('Ther was a problem with the API')
+//         }
+        
+//         else{
+//             const data = await response.json()
+//             console.log(data)
+
+//         }
+        
+      
+//     } catch (err) {
+//         console.log(err)
+        
+//     }
+
+//     finally{
+//         console.log("success")
+//     }
+
+//  } 
+// myPost()
+
+
+
+//review//
+
+// fectch.then
+
+// async function suggestion(){
+//   try{
+//     const response = await fetch("https://apis.scrimb.com/bored/api/activity")
+       
+//          const data = await response.json()
+          
+         
+//          console.log(data)
+
+//   } 
+  
+//   catch(err)
+//             { console.log(err)}
+   
+
+// }   
+
+
+ async function placeholder(){
+    try {
+    const response = await 
+    fetch("https//apis.scrimba.com/jsonplceholder/posts", 
+     {method:POST,
+        body: JSON.stringify(
+            {
+                title:"Holiday Nightmares",
+                body: "When thy were Kidnap in scotland",
+                userId:101,
+            }
+        )
+
+    })
+    if(!response.ok){
+        throw new Error("There was error wih the API")
+        
+        
+    }
+    const data =  await response.json()
+    }
+
+    catch(err){
+        console.log(err)
+    }
+    finally{
+        "seccessful"
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
