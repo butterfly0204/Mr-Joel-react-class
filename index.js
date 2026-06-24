@@ -1,6 +1,6 @@
 // arrow function
 
-const { createElement } = require("react")
+// const { createElement } = require("react")
 
 // greeting = ()=>{
 //     console.log("Hello World");
@@ -624,17 +624,37 @@ const { createElement } = require("react")
 // }
 // suggestion()
 
-const promise = new Promise((resolve, reject) => {
-    const success = Math.random()> 0.5
-    if (success){
-        resolve("operation successful")
+// const promise = new Promise((resolve, reject) => {
+//     const success = Math.random()> 0.5
+//     if (success){
+//         resolve("operation successful")
 
-    } else{
-        reject("operation failed")
+//     } else{
+//         reject("operation failed")
 
-    }
-})
+//     }
+function preLoadImg(url) {
+    return new Promise((resolve, reject) => {
+        const image = new Image();
+        image.src = url;
+        image.alt = "a beautiful image";
 
+        image.addEventListener("load", () => resolve(image));
+        image.addEventListener("error", () => reject("Cannot load image")
+        );
+    });
+}
+
+try {
+    const results = await preLoadImg(
+        "https://scrimba.ams3.cdn.digitaloceanspaces.com/assets/courses/gadvancedjs/scenic1.jpg"
+    );
+
+    console.log(results);
+    document.getElementById("img-container").appendChild(results);
+} catch (err) {
+    console.log("Image has not loaded");
+}
 
 
 
