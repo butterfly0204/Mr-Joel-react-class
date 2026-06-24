@@ -1,5 +1,7 @@
 // arrow function
 
+const { createElement } = require("react")
+
 // greeting = ()=>{
 //     console.log("Hello World");
 // }
@@ -441,132 +443,197 @@
 // }
 
 // console.log(speedWarning(40))
- //  introduction to fectch
+//  //  introduction to fectch
 
-//  async function dog(){
-//      try {
-//         const response = await fetch('https://dog.ceo/api/breeds/image/random')
-//              .then(response =>response.json())
-//              .then(data => {
-//                const createElement = document.createElement('img')
-//                createElement.src = data.message
-//                createElement.alt = 'random dog pictures'
-//                document.getElementById("img-con").appendChild(createElement)
+// //  async function dog(){
+// //      try {
+// //         const response = await fetch('https://dog.ceo/api/breeds/image/random')
+// //              .then(response =>response.json())
+// //              .then(data => {
+// //                const createElement = document.createElement('img')
+// //                createElement.src = data.message
+// //                createElement.alt = 'random dog pictures'
+// //                document.getElementById("img-con").appendChild(createElement)
              
 
-//             })
+// //             })
 
 
-//             } catch (error) {
-//                 console.log(error)
+// //             } catch (error) {
+// //                 console.log(error)
                 
-//             }
-//             finally{
-//                 console.log("omo work ooo");
+// //             }
+// //             finally{
+// //                 console.log("omo work ooo");
                 
-//             }
+// //             }
 
-//     } 
-//     dog()           
+// //     } 
+// //     dog()           
         
 
 
 
-// // async  function getRandom(){
+// // // async  function getRandom(){
     
-// //     const response = await fetch('https://bored-api.appbrewery.com/random')
+// // //     const response = await fetch('https://bored-api.appbrewery.com/random')
     
-// //     const data = await response.json()
-// //     console.log(data)
+// // //     const data = await response.json()
+// // //     console.log(data)
     
-// // }
-// //  getRandom()
+// // // }
+// // //  getRandom()
 
-// async function myPost(){
-//     try {
-//         const response =  await fetch('https://jsonplaceholder.typicode.com/posts')
-//         if(!response.ok){
-//             throw new Error ('Ther was a problem with the API')
-//         }
+// // async function myPost(){
+// //     try {
+// //         const response =  await fetch('https://jsonplaceholder.typicode.com/posts')
+// //         if(!response.ok){
+// //             throw new Error ('Ther was a problem with the API')
+// //         }
         
-//         else{
-//             const data = await response.json()
-//             console.log(data)
+// //         else{
+// //             const data = await response.json()
+// //             console.log(data) ` 
 
-//         }
+// //         }
         
       
-//     } catch (err) {
-//         console.log(err)
+// //     } catch (err) {
+// //         console.log(err)
         
-//     }
+// //     }
 
-//     finally{
-//         console.log("success")
-//     }
+// //     finally{
+// //         console.log("success")
+// //     }
 
-//  } 
-// myPost()
+// //  } 
+// // myPost()
 
 
 
-//review//
+// //review//
 
-// fectch.then
+// // fectch.then
 
-// async function suggestion(){
-//   try{
-//     const response = await fetch("https://apis.scrimb.com/bored/api/activity")
+// // async function suggestion(){
+// //   try{
+// //     const response = await fetch("https://apis.scrimb.com/bored/api/activity")
        
-//          const data = await response.json()
+// //          const data = await response.json()
           
          
-//          console.log(data)
+// //          console.log(data)
 
-//   } 
+// //   } 
   
-//   catch(err)
-//             { console.log(err)}
+// //   catch(err)
+// //             { console.log(err)}
    
 
-// }   
+// // }   
 
 
  
-    try {
-    const response = await fetch("https//jsonplceholder/posts", 
-     {method:'POST',
+// //     try {
+// //     const response = await fetch("https//jsonplceholder/posts", 
+// //      {method:'POST',
        
-        body: JSON.stringify(
-            {
-                title:"Holiday Nightmares",
-                body: "When thy were Kidnap in scotland",
-                userId:101,
-            }
+// //         body: JSON.stringify(
+// //             {
+// //                 title:"Holiday Nightmares",
+// //                 body: "When thy were Kidnap in scotland",
+// //                 userId:101,
+// //             }
 
-        ),
-        headers:{
+// //         ),
+// //         headers:{
 
-            "Content-type": "application/json"
-        }
-    }
+// //             "Content-type": "application/json"
+// //         }
+// //     }
 
-)
-    if(!response.ok){
-        throw new Error("There was error wih the API")
+// // )
+// //     if(!response.ok){
+// //         throw new Error("There was error wih the API")
         
         
-    }
-    const data =  await response.json()
-    }
+// //     }
+// //     const data =  await response.json()
+// //     }
 
-    catch(err){
-        console.log(err)
-    }
-    finally{
-        "seccessful"
-    }
+// //     catch(err){
+// //         console.log(err)
+// //     }
+// //     finally{
+// //         "seccessful"
+// // //     }
+// // function preLoadImg(url){
+// //     return
+// //     new Promise((resolve, reject) => {
+        
+// //         const img = new Image
+// //         img.src = (url)
+// //          img.addEventListener('load', () =>{
+// //             resolve(img)
+           
+// //          })
+// //          img.addEventListener('error', () =>  reject("Error while loading this page"))
+       
+         
+        
+// //     })
+// // }
 
+// // try{
+// //     const result = await preLoadImg('https://scrimba.ams3.cdn.digitaloceanspaces.con/assets/courses/gadvancedjs/scenic1.jpg')
+// //     console.log(result)
+// //     document.getElementById('img-container').appendChild(result)
+// // }
+// // catch (error){
+
+// //     console.log(error);
+// // }
+// try{
+
+    
+//     const response=  await fetch('https://apis.scrimba.com/jsonholder/post/data', {method: "POST"})
+    
+//     body:JSON.stringify({
+//         title: 'HOliday NIghtmare',
+//         body:'when i was kidnapped ',
+//         userId: 1,
+//     })
+//        if(!response.ok){
+//         throw new Error("There was an Error eith the API");
+        
+//        }
+//        else{
+//         const data = await response.json()
+//         console.log(data)
+//        }
+//     }
+
+
+// catch(err){
+//     console.log(err)
+
+// }
+// finally{
+//     console.log("code works")
+// }
+// suggestion()
+
+const promise = new Promise((resolve, reject) => {
+    const success = Math.random()> 0.5
+    if (success){
+        resolve("operation successful")
+
+    } else{
+        reject("operation failed")
+
+    }
+})
 
 
 
